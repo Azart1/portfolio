@@ -1,0 +1,92 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 65px 20px 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__title {
+        text-align: center;
+        position: relative;
+        @include  before_circle;
+        &:before {
+            left:50%;
+            transform: translate(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__divider {
+        margin: 0 auto;
+    }
+    &__block-title {
+        position: relative;
+        padding-left: 35px;
+        &::before {
+            content:'';
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:-7px;
+            width: 15px;
+            height: 15px;
+            border:none;
+            border-radius: 100%;
+            background-color:$main-color;
+
+        }
+    }
+    &__item {
+        position: relative;
+        &::after {
+            content:'';
+            width: 1px;
+            height: calc(100% + 16px);
+            position: absolute;
+            top: -12px;
+            left: 0;
+            background-color:$black;
+        }
+        &::before {
+            content:'';
+            width: 50px;
+            height: 1px;
+            position: absolute;
+            top: 61px;
+            left: 0;
+            background-color:$black;
+        }
+    }
+    &__item-head {
+        position: relative;
+        padding: 45px 0 0 100px;
+    }
+    &__item-location {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__item-body {
+        margin-top: 12px;
+        padding: 0 0 0 43px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__item-icon {
+        position: absolute;
+        top: 43px;
+        left: 62px;
+        @include before_circle;
+            img {
+                position: absolute;
+                top:14px;
+                left: 5px;
+            }
+    }
+}
