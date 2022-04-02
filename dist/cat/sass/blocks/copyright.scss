@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  padding-top: 19px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+.copyright__link {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-gray;
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+}
+.copyright__link-pic {
+  margin-top: 5px;
+}
+
+.copyright__logo {
+  @media (min-width: $desktop-width) {
+    &:hover {
+      fill: $green;
+    }
+
+    &:active {
+      opacity: 0.3;
+      fill: $green;
+    }
+  }
+}

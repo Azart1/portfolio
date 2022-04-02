@@ -1,0 +1,187 @@
+.programs {
+  padding: 22px 20px;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  @media (min-width: $desktop-width) {
+      padding:0 110px;
+}
+}
+.programs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: start;
+}
+}
+.programs__item {
+  width: 280px;
+  min-height: 266px;
+  padding: 0 20px;
+  background-color: $light-gray;
+  border-top: 1px solid $light-gray;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px 24px;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 369px;
+    padding: 74px 51px 50px 51px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    min-height: 376px;
+    width: 574px;
+    padding: 76px 51px 50px 57px;
+}
+}
+.programs__item:last-child {
+  margin-bottom: 0;
+}
+
+.programs__item--slim {
+  background-image: url("../img/bg-program-slim.svg");
+  background-position: 23px 21px;
+  @media (min-width: $tablet-width) {
+    background-position: 445px 75px;
+    background-size: 200px 210px;
+  }
+  @media (min-width: $desktop-width) {
+    background-position: 53px 40px;
+    background-size: 100px 106px;
+}
+}
+.programs__item--mass {
+  background-image: url("../img/bg-program-mass.svg");
+  background-position: 15px 24px;
+  @media (min-width: $tablet-width) {
+    background-position: 411px 89px;
+    background-size: 268px 200px;
+    padding-top: 77px;
+  }
+  @media (min-width: $desktop-width) {
+    background-position: 40px 45px;
+    background-size:134px 100px;
+    padding-top: 76px;
+}
+}
+.programs__item--mass .programs__description {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 480px;
+}
+}
+
+.programs__title {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 71px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: left;
+  @media (min-width: $tablet-width) {
+    width: 377px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+      text-align: left;
+      margin-left: 163px;
+      font-size: 36px;
+      line-height: 36px;
+}
+}
+.programs__description {
+  margin-top: 29px;
+  margin-bottom: 0;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkest-gray;
+  @media (min-width: $tablet-width) {
+    width: 377px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+  @media (min-width: $desktop-width) {
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 74px;
+      width: 480px;
+}
+}
+
+.programs__link {
+  margin-top: 22px;
+  padding-top: 19px;
+  margin-right: 5px;
+  position: relative;
+  display: flex;
+  border-top: 1px solid $gray;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+&:active {
+  color: rgba($black, 0.3);
+}
+}
+.programs__link::after {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 10px;
+  margin-left: 14px;
+  background-image: url("../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 11px;
+    margin-left: 25px;
+  }
+}
+
+.programs__link:hover::after {
+  width: 35px;
+  background-image: url("../img/icon_long-arrow.svg");
+}
+.programs__link:active::after{
+    opacity: 0.3;
+}

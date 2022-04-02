@@ -1,0 +1,226 @@
+.card {
+  border-top: 1px solid $gray;
+  padding: 0 18px 24px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+      flex-direction: column;
+      width:324px;
+      min-height: 512px;
+      align-items:center;
+      justify-content: end;
+      border:none;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 16%,
+        rgba(234, 234, 234, 1) 16%
+      );
+      margin-bottom: 58px;  
+      padding: 10px 0 37px 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-bottom: 58px;
+    padding: 10px 0 40px 0;
+  }
+}
+.card__wrapper {
+  width: 142px;
+  margin-bottom: 8px;
+  @media (min-width: $tablet-width) {
+      width: 100%;
+      padding: 5px 36px 0px 37px;
+      margin-bottom: 33px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 8px 36px 0px 41px;
+  }
+}
+.card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $black;
+  width: 76px;
+  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 174px;
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+    padding: 14px 20px;
+    padding-bottom: 2px;    
+  }
+  @media (min-width: $desktop-width) {
+    padding: 14px 20px;
+    padding-bottom: 2px;
+    padding-left: 17px;
+  }
+}
+.card__table {
+  width: 100%;
+  margin-top: 12px;
+}
+.card__table-data {
+  padding: 0;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $darkest-gray;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 0;
+    padding-bottom: 6px;
+  }
+  @media (min-width: $desktop-width) { 
+      padding: 7px 0;
+      padding-bottom: 7px;
+  }
+}
+.card__button {
+  width: 280px;
+  height: 40px;
+  border: 1px solid $green;
+  background-color: $green;
+  color: $white;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 10px;
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin-top: 0;
+  }
+  @media(min-width:$desktop-width){
+    width: 168px;
+    height: 40px;
+    padding-left: 7px;
+    padding-top: 1px;
+  }
+}
+.card__table-data--left {
+  text-align: left;
+}
+.card__table-data--right {
+  text-align: right;
+}
+.card__picture {
+  padding-top: 18px;
+  @media (min-width: $tablet-width) {
+      padding-top:0 ;
+  }
+  @media(min-width:$desktop-width){
+    padding-left: 15px;
+  }
+}
+.card__picture--big {    
+  @media (min-width: $tablet-width) {
+    margin-bottom:3px ;
+}
+}
+.card__picture--small {    
+  @media (min-width: $tablet-width) {
+    margin-bottom:9px ;
+}
+}
+
+.card--more {
+  background-image: url("../img/bg-plus.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 13%;
+  background-size: 30px 30px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-plus-big.svg");
+    background-size: 60px 60px;
+    background-position: 50% 31%;
+    padding-bottom: 0;
+}
+@media(min-width:$desktop-width){  
+    background-position: 50% 30%;
+}
+}
+
+.card__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $darkest-gray;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+.card__button--more {
+  background: $light-gray;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkest-gray;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+.card__title--more {
+  width: 100%;
+  text-align: center;
+  margin-top: 78px;
+  margin-bottom: 0;
+  @media(min-width:$tablet-width){        
+  width: 175px;
+  text-align: center;
+  margin-top: 78px;
+  }
+  @media(min-width:$desktop-width){    
+    width:200px;
+    padding-left:24px ;
+  }
+}
+.card__text--more {
+  @media(min-width:$tablet-width){        
+  width: 175px;
+  text-align: center;
+  margin-top: 19px;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 67px;
+  }
+  @media(min-width:$desktop-width){
+    margin-left: 36px;
+  }
+
+}
+.card__wraper--more {    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  @media(min-width:$tablet-width){ 
+      width: 100%;
+      min-height: 427px;
+      background-color:transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border:2px solid $light-gray;
+      padding-bottom: 34px;
+    }
+}

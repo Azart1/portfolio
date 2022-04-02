@@ -1,0 +1,101 @@
+.promo {
+  background-color: $white;
+  min-height: 480px;
+  padding: 28px 20px 0 20px;
+  background-image: url("../img/bg-promo-can-m.png"),
+    url("../img/bg-promo-cat-m.jpg");
+  background-size: 280px 270px, 320px 302px;
+  background-repeat: no-repeat;
+  background-position: bottom 42px center, top center;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 112px;
+    padding-top: 47px;
+    min-height: 840px;
+    background-image: url("../img/bg-promo-can-t.png");
+    background-size: 709px 609px;
+    background-repeat: no-repeat;
+    background-position: 48% 108%;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 192px;
+      background-color: transparent;
+      background-image: url("../img/bg-promo-can-d.png");
+      background-size: 552px 500px;
+      background-repeat: no-repeat;
+      background-position: 63% 12%;  
+      min-height: 654px;
+      padding-top: 102px
+}
+}
+.promo__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $white;
+  @media (min-width: $tablet-width) {
+    color: $black;
+    width: 440px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 5px;
+  }
+  @media (min-width: $desktop-width) {
+      margin: 0;
+}
+}
+
+.promo__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  margin-top: 25px;
+  @media (min-width: $tablet-width) {
+    color: $black;
+    width: 283px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+  @media (min-width: $desktop-width) {
+      margin-left: 0;
+}
+}
+
+.promo__button {
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  margin-top: 302px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

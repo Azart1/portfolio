@@ -1,0 +1,93 @@
+.contacts {
+  padding: 29px 0;
+  padding-bottom: 0;
+  padding-top: 26px;
+  background-color: $white;
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    background-color: $light-gray;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    position: relative;
+  }
+}
+.contacts__block {
+  display: flex;
+  padding: 0 20px;
+  padding-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 0 71px;
+    padding-bottom: 61px;
+  }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $white;
+    top: 95px;
+    left: 113px;
+    padding: 63px 56px 57px 77px;
+    width: 570px;
+    height: 201px;
+  }
+}
+.contacts__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 200px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 4px;
+  }
+}
+.contacts__address {
+  width: 187px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 1px;
+  color: $darkest-gray;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0;
+  }
+}
+.contacts__map {
+  width: 320px;
+  min-height: 362px;
+  background-color: $light-gray;
+  background-image: url("../img/bg-map-m.png");
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    width: 100%;
+    background-image: url("../img/bg-map-t.png");
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-d.png");
+  }
+}
+
+.contacts--index {  
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+}
+}

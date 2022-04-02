@@ -1,0 +1,37 @@
+.tehnologies {
+    padding-top: 60px;
+    &__wrapper {
+        padding: 60px 10px;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: minmax(270px, auto) minmax(270px, auto);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border:1px solid $black;
+        &:hover {           
+            transition: 0.6s;
+        border:1px solid $main-color; 
+        }
+    }
+    &__item-pic {
+        height: 65px;
+        display: flex;
+        align-items: center;
+    }
+    &__item-title {
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    &__item-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 15px;
+    }
+}

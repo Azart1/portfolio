@@ -1,0 +1,15 @@
+.button {
+  @media (min-width: $desktop-width) {
+    max-width: 206px;
+    width: 206px;
+    height: 60px;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: rgba($white, 0.3);
+    }
+  }
+}

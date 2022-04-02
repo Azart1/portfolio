@@ -1,0 +1,13 @@
+.table {    
+  @media (min-width: $tablet-width) {
+      border-collapse: collapse;
+}
+}
+.table__row {    
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom:2px solid $gray;
+  }
+  }

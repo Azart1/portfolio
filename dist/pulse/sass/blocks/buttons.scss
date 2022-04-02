@@ -1,0 +1,53 @@
+.button {
+  width: 153px;
+  height: 32px;
+  background: $red;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    transition-duration: 0.4s;
+      background-color:$red-light;
+      box-shadow: 5px 5px 11px $black-light;
+  }
+  &_header {
+      margin-top: 10px;
+  }
+  &_main {
+    width: 303px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 67px;
+    @media (max-width: $mobile-width-only) {
+      width:80% ;
+      margin-top: 20px;
+    }
+  }
+  &_form {
+    width: 303px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 11px;
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
+  }
+  &_catalog-item {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

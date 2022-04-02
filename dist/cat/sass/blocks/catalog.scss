@@ -1,0 +1,21 @@
+.catalog {
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 82px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    padding-top: 80px;
+  }
+}
+.catalog__lsit {
+  margin: 0;
+  border-bottom: 1px solid $gray;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+}

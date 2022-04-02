@@ -1,0 +1,93 @@
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  src: url("../fonts/oswald-400.woff2") format("woff2"),
+    url("../fonts/oswald-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  src: url("../fonts/oswald-500.woff2") format("woff2"),
+    url("../fonts/oswald-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+$white: #ffffff;
+$black: #222222;
+$green: #68b738;
+$light-green: #5eaa2f;
+$light-gray: #f2f2f2;
+$gray: #cdcdcd;
+$border-gray: #e6e6e6;
+$dark-gray: #666666;
+$pink: #ff8282;
+$darkest-gray: #444444;
+$gray-lightest: #eaeaea;
+
+@import "normalize";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "variables.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/catalog.scss";
+@import "blocks/additional.scss";
+@import "blocks/gift.scss";
+@import "blocks/main-programs.scss";
+@import "blocks/form.scss";
+@import "blocks/button.scss";
+@import "blocks/table.scss";

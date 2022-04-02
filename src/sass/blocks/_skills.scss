@@ -1,0 +1,37 @@
+.skills {
+    padding: 40px 0;
+    &__list {        
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(minmax(70px, auto)) ;
+        grid-auto-rows: minmax(70px, auto);
+         row-gap: 30px;
+         column-gap: 45px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title {
+        position: relative;
+        padding-left: 16px;
+        @include  before_circle;        
+            &:before {
+                top:-8px;
+                left: 0;
+            }
+    }
+    &__scale {
+        width: 100%;
+        height: 14px;
+        background-color: $gray;
+        border-radius: 4px;
+    }
+    &__bar {
+        height: 14px;
+        background-color: $main-color;
+        border-radius: 4px;
+    }
+}

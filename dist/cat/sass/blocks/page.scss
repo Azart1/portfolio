@@ -1,0 +1,19 @@
+.page {
+  padding: 0 calc((100% - 320px) / 2);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 calc((100% - 768px) / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 calc((100% - 1440px) / 2);
+  }
+}
+.page__wrapper {
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/bg-index-cat-d.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 720px 700px;
+}
+}

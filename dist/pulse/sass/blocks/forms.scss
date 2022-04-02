@@ -1,0 +1,31 @@
+.form {    
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        border:none;
+        padding: 0;
+        margin-top: 36px;
+        width: 303px;
+        @media (max-width: $tablet-width) {
+          min-width: 303px;
+          width: 50%;
+        }
+        @media (max-width: $mobile-width-only) {
+          min-width: auto;
+          width: 100%;
+        }
+        &_mt10 {
+          margin-top: 10px;
+        }
+    }
+    &__input {
+        height: 54px;
+        border-radius: 5px;
+        margin-top: 11px;
+        padding:  5px 15px;
+        width: 100%;
+        border:none;
+        font-size: 14px;
+        color: $black-light;
+    }
+}
